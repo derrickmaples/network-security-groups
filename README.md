@@ -11,7 +11,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Various Command-Line Tools
-- Various Network Protocols (IMCP, SSH, RDH, DNS, HTTP/S)
+- Various Network Protocols (ICMP, SSH, RDH, DNS, HTTP/S)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -21,7 +21,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Create a Windows 11 and a Linux (Ubintu) Virtual Machine in Azure
+- Create a Windows 11 and a Linux (Ubuntu) Virtual Machine in Azure
 - Log in to the Windows 11 Virtual Machine and install Wireshark.
 - Open Wireshark and observe different network traffic.
   - IMCP
@@ -52,12 +52,14 @@ Log in to the Windows 11 Virtual Machine and install Wireshark from www.wireshar
 
 
 <p>
-Open Wireshark and observe different network traffic. First filter the ICMB traffic in Wireshark then use the private IP address to ping the Linux Virtual Machine in Power Shell.
+Open Wireshark and observe different network traffic. First filter the ICMP traffic in Wireshark then use the private IP address to ping the Linux Virtual Machine in Power Shell.
 In the log you can see the four requests from the Windows 11 VM (private IP address 10.0.1.4) and the four replies from the Linux VM (private IP address 10.0.2.4).
 </p>
 <br />
 
 
+![6-3](https://github.com/user-attachments/assets/4edf18b6-a70e-4824-8117-9b0e7187ed1f)
+_______________________________________________________________________________________
 ![6-3a](https://github.com/user-attachments/assets/de2a8410-b5db-4b0c-a2f7-46bbdf4c761c)
 
 
