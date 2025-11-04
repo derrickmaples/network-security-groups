@@ -37,9 +37,9 @@ Create a Windows and a Linux Virtual Machine in Azure. Make sure they are on the
 <br />
 
 
-![6-1](https://github.com/user-attachments/assets/df1fabd3-2cb4-4e16-9eb2-cc12bcd856f5)
+![6-1](https://github.com/user-attachments/assets/6f8f947b-73f9-4171-a256-f2ecb85a5a8b)
 ________________________________________________________________________________________
-![6-1a](https://github.com/user-attachments/assets/d8e07553-1ea9-43b4-b1d6-7f37f15a6249)
+![6-1a](https://github.com/user-attachments/assets/ce492011-2d00-4e86-ace5-28fa0257428c)
 
 
 <p>
