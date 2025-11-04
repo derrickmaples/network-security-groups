@@ -22,10 +22,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>High-Level Steps</h2>
 
 - Create a Windows 11 and a Linux (Ubuntu) Virtual Machine in Azure
-- Log in to the Windows 11 Virtual Machine and install Wireshark.
-- Open Wireshark and observe different network traffic.
-  - IMCP
-  - 
+- Log in to the Windows 11 Virtual Machine and install Wireshark
+- Open Wireshark and observe different network traffic
+  - Observe IMCP traffic
+  - Configure a firewall on the Linux VM and observe SSH traffic
 - Step 4
 
 <h2>Actions and Observations</h2>
@@ -37,9 +37,9 @@ Create a Windows and a Linux Virtual Machine in Azure. Make sure they are on the
 <br />
 
 
-![6-1](https://github.com/user-attachments/assets/6f8f947b-73f9-4171-a256-f2ecb85a5a8b)
-________________________________________________________________________________________
-![6-1a](https://github.com/user-attachments/assets/ce492011-2d00-4e86-ace5-28fa0257428c)
+![6-1](https://github.com/user-attachments/assets/ab7271d0-03d6-410a-b69c-5e09f668ca2a)
+_______________________________________________________________________________________
+![6-1a](https://github.com/user-attachments/assets/d343a29c-c937-46e3-83b5-a7add8ddf430)
 
 
 <p>
@@ -58,13 +58,13 @@ In the log you can see the four requests from the Windows 11 VM (private IP addr
 <br />
 
 
-![6-3](https://github.com/user-attachments/assets/4edf18b6-a70e-4824-8117-9b0e7187ed1f)
+![6-3](https://github.com/user-attachments/assets/49b5bfe0-5e0d-4779-bd83-67879f66c98d)
 _______________________________________________________________________________________
-![6-3a](https://github.com/user-attachments/assets/de2a8410-b5db-4b0c-a2f7-46bbdf4c761c)
+![6-3a](https://github.com/user-attachments/assets/b7787200-1486-4611-aec8-30b5ea6304ca)
 
 
 <p>
-Samples line
+Start a continuous ping in Power Shell. Then go the the Network Security Group in the Network Setting for the Linux VM and add a rule that denies pings in the Inbound Security Rules tab on the left under Settings.
 </p>
 <br />
 
