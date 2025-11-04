@@ -64,9 +64,16 @@ ________________________________________________________________________________
 
 
 <p>
-Start a continuous ping in Power Shell. Then go the the Network Security Group in the Network Setting for the Linux VM and add a rule that denies pings in the Inbound Security Rules tab on the left under Settings.
+Start a continuous ping in Power Shell. Then go the the Network Security Group in the Network Setting for the Linux VM and add a rule that denies pings in the Inbound Security Rules tab on the left under Settings. Now go back to Power Shell in the VM. Because ping was denied the 
 </p>
 <br />
+
+
+![6-4](https://github.com/user-attachments/assets/24901e36-4e57-4a12-b545-752bcbb4e0b4)
+_______________________________________________________________________________________
+![6-4a](https://github.com/user-attachments/assets/1503c86f-c5be-4475-b22c-d53284b61f8f)
+_______________________________________________________________________________________
+![6-4b](https://github.com/user-attachments/assets/dcec72f5-3fb0-4b2f-9211-72d9ae28d419)
 
 
 <p>
