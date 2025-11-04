@@ -24,9 +24,12 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Create a Windows 11 and a Linux (Ubuntu) Virtual Machine in Azure
 - Log in to the Windows 11 Virtual Machine and install Wireshark
 - Open Wireshark and observe different network traffic
-  - Observe IMCP traffic
-  - Configure a firewall on the Linux VM and observe SSH traffic
-- Step 4
+  - Observe IMCP traffic then configure a firewall on the Linux VM
+  - Observe SSH traffic
+  - Observe RDH traffic
+  - Observe DNS traffic
+  - Observe HTTP/S traffic
+  
 
 <h2>Actions and Observations</h2>
 
@@ -77,41 +80,43 @@ ________________________________________________________________________________
 
 
 <p>
-Samples line
+Observe SSH traffic from the Linux VM. This filter records traffic from a specific machine using port 22. Log in to the Linux VM in Power Shell. In Wireshark you will see every key stroke you make is recorded. 
 </p>
 <br />
+
+
+![6-5](https://github.com/user-attachments/assets/46d8cd02-63ce-42e5-b966-7946d8983e20)
+_______________________________________________________________________________________
+![6-5b](https://github.com/user-attachments/assets/c2863d21-08a3-4b76-8949-b4a27594be18)
 
 
 <p>
-Samples line
+Observe RDH traffic of the Windows 11 VM. Enter "tcp.port == 3389" into the filter. You see Windows is constantly stream information unlike SSH, which only sends info when an action is done.
 </p>
 <br />
+
+
+![6-7](https://github.com/user-attachments/assets/3bb82507-9d59-42d8-a48c-6db3372a8c1e)
 
 
 <p>
-Samples line
+Enter nslookup followed by a website (google.com for the purposes of this project) in Power Shell to observe DNS traffic. You will be able to see the IP address or addresses for the website. 
 </p>
 <br />
+
+
+![6-6](https://github.com/user-attachments/assets/9a596fa9-9672-47c7-9cea-70762d25ed97)
 
 
 <p>
-Samples line
+Observe HTTP/HTTPS traffic. This records all web traffic in the VM. HTTPS encryps the HTTP data. To filter HTTPS specifically enter "tcp.port == 443".
 </p>
 <br />
 
 
-<p>
-Samples line
-</p>
-<br />
+![6-8](https://github.com/user-attachments/assets/30f3afc1-b9ce-4e91-ba53-e9a5542ea627)
+_______________________________________________________________________________________
+![6-8a](https://github.com/user-attachments/assets/59162664-9b31-4175-8587-b006d587c9ab)
 
 
-<p>
-Samples line
-</p>
-<br />
-
-
-
-
-
+<h2>Success</h2>
